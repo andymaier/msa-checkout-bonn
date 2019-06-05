@@ -1,6 +1,7 @@
 package de.predic8.checkout;
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
@@ -11,6 +12,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import static org.springframework.boot.SpringApplication.run;
 
 @SpringBootApplication
+@EnableDiscoveryClient
 public class CheckoutApplication {
 
 	@Bean
