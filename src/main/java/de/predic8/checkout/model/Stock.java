@@ -1,5 +1,8 @@
 package de.predic8.checkout.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties( value =  {"hibernateLazyInitializer", "handler"}, ignoreUnknown = true)
 public class Stock {
 
 	private String uuid;
